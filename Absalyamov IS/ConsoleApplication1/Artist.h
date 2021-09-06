@@ -16,6 +16,7 @@ class ARTIST
 public: 
 	friend std::istream& operator >> (std::istream& in, ARTIST& artist);
 	friend std::ostream& operator << (std::ostream& out, const ARTIST& artist);
+	int GetID() const;
 	ARTIST();
 };
 

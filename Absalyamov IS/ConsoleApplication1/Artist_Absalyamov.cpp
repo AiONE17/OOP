@@ -5,6 +5,10 @@ ARTIST::ARTIST()
 	id = MaxID;
 	MaxID++;
 }
+int ARTIST::GetID() const
+{
+	return id;
+}
 istream& operator >> (istream& in, ARTIST& artist)
 {
 	cout << "¬ведите им€\n";
@@ -21,6 +25,7 @@ istream& operator >> (istream& in, ARTIST& artist)
 	cout << "¬ведите количество картин\n";
 	cin >> artist.numbofarts;
 	cout << "¬ведите страну\n";
-	getline(in, artist.country, '\n');
+	cin >> artist.country;
+	//getline(in, artist.country, '\n');
 	return in;
 }
