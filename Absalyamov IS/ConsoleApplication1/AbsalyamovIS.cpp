@@ -28,6 +28,10 @@ int main()
             artists.insert(make_pair(artist.GetID(), artist));
             break;
         }
+        case 2: {
+            for (const auto& artist : artists)
+                cout << artist.second << endl;
+        }
               return 0;
         }
         if (action != 0)

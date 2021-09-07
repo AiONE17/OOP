@@ -29,3 +29,15 @@ istream& operator >> (istream& in, ARTIST& artist)
 	//getline(in, artist.country, '\n');
 	return in;
 }
+ostream& operator << (ostream& out, const ARTIST& artist)
+{
+	out << "Идентификатор: " << artist.id << endl;
+	out << "Имя: " << artist.name << endl;
+	out << "Фамилия: " << artist.surname << endl;
+	out << "Год Рождения: " << artist.birthyear << endl;
+	out << "Год смерти: " << artist.deathyear << endl;
+	out << "Возраст: " << artist.age << endl;
+	out << "Количество картин: " << artist.numbofarts << endl;
+	out << "Страна: " << artist.country << endl;
+	return out; 
+}
