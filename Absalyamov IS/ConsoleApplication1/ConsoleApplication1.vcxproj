@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Artist_Absalyamov.cpp" />
+    <ClCompile Include="Team_Absalyamov.cpp" />
+    <ClCompile Include="Player_Absalyamov.cpp" />
     <ClCompile Include="AbsalyamovIS.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Artist.h" />
+    <ClInclude Include="Team_Absalyamov.h" />
+    <ClInclude Include="Player_Absalyamov.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

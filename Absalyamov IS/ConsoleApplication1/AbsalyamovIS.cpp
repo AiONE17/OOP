@@ -2,35 +2,51 @@
 //
 
 #include <iostream>
-#include "Artist.h"
-#include <unordered_map>
+#include "Player_Absalyamov.h"
+#include "Team_Absalyamov.h"
+#include <fstream>
 using namespace std;
 
 void print_menu() {
-    cout << "Выберите действие\n";
-    cout << "1. Добавить художника\n";
-    cout << "2. Вывести художников\n";
+    system("cls");
+    cout << "Choose an action\n";
+    cout << "1. Add player\n";
+    cout << "2. Output player to console\n";
+    cout << "3. Load players from file\n";
+    cout << "4. Save players to file\n";
+    cout << "5. Clear\n";
 }
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
     int action;
-    unordered_map <int, ARTIST> artists;
+    Team_Absalyamov team;
     do
     {
         print_menu();
         cin >> action;
         switch (action) {
         case 1: {
-            ARTIST artist;
-            cin >> artist;
-            artists.insert(make_pair(artist.GetID(), artist));
+            Player_Absalyamov *player = new Player_Absalyamov();
+            player->INCONSOLE();
+            team.add(player);
             break;
         }
         case 2: {
-            for (const auto& artist : artists)
-                cout << artist.second << endl;
+            team.OUTCONSOLE();
+            break;
+        }
+        case 3: {
+            team.FIN();
+            break;
+        }
+        case 4: {
+            team.FOUT();
+            break;
+        }
+        case 5: {
+            team.clear();
+            break;
         }
               return 0;
         }

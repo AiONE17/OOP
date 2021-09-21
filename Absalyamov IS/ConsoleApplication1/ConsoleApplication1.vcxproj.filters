@@ -18,12 +18,18 @@
     <ClCompile Include="AbsalyamovIS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Artist_Absalyamov.cpp">
+    <ClCompile Include="Player_Absalyamov.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Team_Absalyamov.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Artist.h">
+    <ClInclude Include="Player_Absalyamov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Team_Absalyamov.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
